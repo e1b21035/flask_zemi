@@ -1,4 +1,4 @@
-from flask_zemi import app
+from matsuri import app
 from flask import render_template, request, Flask
 
 @app.route('/')
