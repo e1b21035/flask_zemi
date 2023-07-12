@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォーム</title>
+</head>
+<body>
+    <form action="/result" method="post">
+        <label for="name">名前</label>
+        <br>
+        <input type="text" name="name" placeholder="山田太郎" maxlength="10" required>
+        <br>
+        <label for="email">メールアドレス</label>
+        <br>
+        <input type="email" name="email" placeholder="example@example.com">
+        <br>
+        <label for="article">投稿</label>
+        <br>
+        <input type="text" name="article" placeholder="内容" required>
+        <br>
+        <button type="submit">送信</button>
+        <button type="reset">リセット</button>
+    </form>
+</body>
+</html>
