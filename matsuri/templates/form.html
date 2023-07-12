@@ -7,18 +7,23 @@
 </head>
 <body>
     <form action="/result" method="post">
-        <label for="name">名前</label>
-        <br>
-        <input type="text" name="name" placeholder="山田太郎" maxlength="10" required>
-        <br>
-        <label for="email">メールアドレス</label>
-        <br>
-        <input type="email" name="email" placeholder="example@example.com">
-        <br>
-        <label for="article">投稿</label>
-        <br>
-        <input type="text" name="article" placeholder="内容" required>
-        <br>
+        <label for="name">名前</label><br>
+        <input type="text" name="name" placeholder="山田太郎" maxlength="10" required><br>
+
+        <label for="email">メールアドレス</label><br>
+        <input type="email" name="email" placeholder="example@example.com"><br>
+
+        <label for="article">投稿</label><br>
+        <input type="text" name="article" placeholder="内容" required><br>
+
+        <label for="grade">学年</label><br>
+        <select name="grade">
+            <option value="1">1年</option>
+            <option value="2">2年</option>
+            <option value="3">3年</option>
+            <option value="4">4年</option>
+        </select>
+        
         <button type="submit">送信</button>
         <button type="reset">リセット</button>
     </form>
