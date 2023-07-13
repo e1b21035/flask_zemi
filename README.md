@@ -1,9 +1,11 @@
 # Flaskを使ったWebページの作成
-PythonでFlaskを利用したWebの作成。
+PythonでFlaskを利用したWebページの作成。
 
 ## 環境
 実行環境: Windows 11 Visual Studio Code
+
 Python: 3.8
+
 Flask: 2.3.2
 
 ## 実行方法
