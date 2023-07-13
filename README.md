@@ -16,6 +16,15 @@ server.pyをPythonで実行。
 
 2023/07/13  form.html -> 学年の選択の追加
             cssファイルの追加
+            Headerの追加
+
+## 追加してほしい機能など要望は
+Discord -> hadadayo
+
+E-mail -> e1b21084@oit.ac.jp    
+
+に連絡してください。
+
 
 ## READMEの最終変更
-2023/07/13 15:45
+2023/07/13 17:52
