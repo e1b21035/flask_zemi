@@ -10,7 +10,10 @@ def form():
     name = "Test"
     return render_template('form.html')
 
-@app.route('/result', methods=["POST"])
+@app.route('/result', methods=['POST', 'GET'])
 def result():
-    data = request.form
-    return render_template('result.html', data=data)
+    if(request.method == 'POST'):
+        data = request.form
+        return render_template('result.html', data=data)
+    else:
+        return render_template('getresult.html')

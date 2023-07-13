@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css//style.css" />
     <title>フォーム</title>
 </head>
 <body>
@@ -13,19 +14,19 @@
         <label for="email">メールアドレス</label><br>
         <input type="email" name="email" placeholder="example@example.com"><br>
 
-        <label for="article">投稿</label><br>
-        <input type="text" name="article" placeholder="内容" required><br>
-
         <label for="grade">学年</label><br>
         <select name="grade">
             <option value="1">1年</option>
             <option value="2">2年</option>
             <option value="3">3年</option>
             <option value="4">4年</option>
-        </select>
-        
-        <button type="submit">送信</button>
-        <button type="reset">リセット</button>
+        </select><br>
+
+        <label for="article">コメント</label><br>
+        <input type="text" name="article" placeholder="内容" required><br>
+
+        <button type="submit" class="btn">送信</button>
+        <button type="reset" class="btn">リセット</button>
     </form>
 </body>
 </html>
