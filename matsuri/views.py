@@ -17,3 +17,7 @@ def result():
         return render_template('result.html', data=data)
     else:
         return render_template('getresult.html')
+
+@app.route('/program')
+def program():
+    return render_template('program.html')

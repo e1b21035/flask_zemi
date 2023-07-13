@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href='{{ url_for('static', filename='resultstyle.css')}}'>
     <title>フォーム返信</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/form">アンケート</a></li>
+            <li><a href="/result">result</a></li>
+            <li><a href="/program">プログラム</a></li>
+        </ul>
+    </nav>
+    <br>
     <h1>送信者の名前： {{  data["name"]  }}</h1>
     <h2>内容： {{ data["article"] }}</h2>
 </body>
