@@ -24,7 +24,7 @@ htmlにコメントアウトの追加<br>
 ## 追加してほしい機能など要望は
 Discord -> hadadayo
 
-E-mail -> e1b21084@oit.ac.jp    
+E-mail -> tech.hach@outlook.com  
 
 に連絡してください。
 
