@@ -6,7 +6,9 @@
     <link rel="stylesheet" type="text/css" href='{{ url_for('static', filename='resultstyle.css')}}'>
     <title>フォーム返信</title>
 </head>
+<!--プログラムの結果を表示するプログラム-->
 <body>
+    <!--ヘッダーの表示-->
     <nav>
         <ul>
             <li><a href="/">HOME</a></li>
@@ -16,6 +18,7 @@
         </ul>
     </nav>
     <br>
+    <!--POSTがどうかわからないが取得した値を表示する-->
     <h1>送信者の名前： {{  data["name"]  }}</h1>
     <h2>内容： {{ data["article"] }}</h2>
 </body>
