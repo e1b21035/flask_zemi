@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href='{{ url_for('static', filename='st_formstyle.css')}}'>
+    <title>フォーム</title>
+</head>
+<!-- アンケートフォームのページ-->
+<body>
+    <!--ヘッダーの作成-->
+    <nav>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/form">アンケート</a></li>
+            <li><a href="/result">result</a></li>
+            <li><a href="/program">プログラム</a></li>
+        </ul>
+    </nav>
+    <br>
+    <!--/resultにpostでformを送信-->
+    <form action="/result" method="post">
+        <label for="name">名前</label><br>
+        <input type="text" name="name" placeholder="山田太郎" maxlength="10" required><br>
+
+        <label for="email">メールアドレス</label><br>
+        <input type="email" name="email" placeholder="example@example.com"><br>
+
+        <label for="grade">学年</label><br>
+        <select name="grade">
+            <option value="1">1年</option>
+            <option value="2">2年</option>
+            <option value="3">3年</option>
+            <option value="4">4年</option>
+        </select><br>
+
+        <label for="department">学科</label><br>
+        <select name="department">
+            <option value="id">ID科</option>
+            <option value="ic">IC科</option>
+            <option value="is">IS科</option>
+            <option value="im">IM科</option>
+            <option value="in">IN科</option>
+        </select><br>
+
+        <label for="article">コメント</label><br>
+        <input type="text" name="article" placeholder="内容" required><br>
+
+        <button type="submit" class="btn">送信</button>
+        <button type="reset" class="btn">リセット</button>
+    </form>
+</body>
+</html>

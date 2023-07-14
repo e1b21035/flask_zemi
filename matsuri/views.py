@@ -7,7 +7,6 @@ def index():
 
 @app.route('/form')
 def form():
-    name = "Test"
     return render_template('form.html')
 
 @app.route('/result', methods=['POST', 'GET'])
